@@ -21,18 +21,18 @@ test("reverseString", () => {
 test("calculator", () => {
   expect(calculator.add(1, 2)).toBe(3);
   expect(calculator.subtract(4, 2)).toBe(2);
-  expect(calculator.multiply(1, 2)).toBe(2);
+  expect(calculator.multiply(34,4)).toBe(34*4);
   expect(calculator.divide(10, 2)).toBe(5);
-  expect(calculator.divide(10, 0)).toThrow();
+  expect(()=>calculator.divide(10, 0)).toThrow(Error);
 });
 
 test("caesarCipher", () => {
-  expect(caesarCipher("attack at ! dawn")).toBe("fyyfhp fy ! ifbs");
-  expect(caesarCipher("attack")).toBe("fyyfhp");
+  expect(caesarCipher("attack at ! dawn")).toBe("buubdl bu ! ebxo");
+  expect(caesarCipher("asTimekeep")).toBe("btujnflffq");
 });
 
 test("anaylze", () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe({
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
     average: 4,
     min: 1,
     max: 8,
