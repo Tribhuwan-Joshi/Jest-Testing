@@ -4,7 +4,8 @@
   "description": "A repo to practice Test Driven Development with Jest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch ./*.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
-    "babel-jest": "^29.1.2"
+    "babel-jest": "^29.1.2",
+    "jest": "^29.1.2"
   }
 }
