@@ -70,4 +70,3 @@ function analyzeArray(arr) {
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
 
-console.log(caesarCipher("attack at ! dawn ? :"));
